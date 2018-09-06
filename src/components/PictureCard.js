@@ -1,4 +1,6 @@
 import React from "react";
+import ReactDOM from 'react-dom';
+import App from '../App';
 
 class PictureCard extends React.Component {
     constructor(props) {
@@ -9,14 +11,20 @@ class PictureCard extends React.Component {
             name: null
         };
     }
+    setClicked() {
 
+        this.setState({ clicked: true });
+        ReactDOM.render(<App />, document.getElementById('root'));
+
+    }
 
     render() {
         return (
             <button
                 className="pictureCard"
             >
-                <img src={this.props.src} alt={this.props.name} onClick={() => this.setState({ clicked: true })} />
+                <img src={this.props.src} alt={this.props.name} onClick={() => this.setClicked()}
+                />
             </button>
         );
     }

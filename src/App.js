@@ -20,8 +20,6 @@ class App extends Component {
 export default App;
 
 
-// picture array
-// randomize the renders for picturecards
 // check if card has been clicked and update score
 // if clicked reset game..
 // update best score
