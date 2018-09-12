@@ -1,7 +1,6 @@
 import React from "react";
 import PictureCard from "./PictureCard";
 
-
 class nflTeam {
     constructor(src, name) {
         this.src = src;
@@ -96,6 +95,14 @@ class Game extends React.Component {
     render() {
         return (
             <div>
+                <header className="App-header">
+                    <h1 className="App-title">Clicky Game</h1>
+                    <h2 className="App-title">Click Your Way To A Win!</h2>
+                    <div>
+                        <h3 className="App-title">Current Score: {this.state.currentScore}</h3>
+                        <h3 className="App-title">Best Score: {this.state.bestScore}</h3>
+                    </div>
+                </header>
                 <div className="container">
                     {this.renderPictureCards()}
                 </div>
