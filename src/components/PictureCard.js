@@ -1,4 +1,5 @@
 import React from "react";
+import "./pictureCard.css";
 
 class PictureCard extends React.Component {
     constructor(props) {
@@ -11,10 +12,8 @@ class PictureCard extends React.Component {
 
     render() {
         return (
-            <button
-                className="pictureCard"
-            >
-                <img src={this.props.src} alt={this.props.name} onClick={() =>
+            <button>
+                <img className="pictureCard" src={this.props.src} alt={this.props.name} onClick={() =>
                     this.props.onClick()
                 } />
             </button>

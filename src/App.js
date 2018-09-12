@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Game from "./components/Game";
 
@@ -8,8 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Clicky Game</h1>
+          <h2 className="App-title">Click Your Way To A Win!</h2>
+          <h3 className="App-title">Current Score: {this.state.currentScore}</h3>
         </header>
         <Game />
       </div>

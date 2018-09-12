@@ -53,7 +53,7 @@ class Game extends React.Component {
     setClicked(item) {
 
         let picturecard = this.state.pictureCards.find((i) => {
-            return i.id == item.name;
+            return i.id === item.name;
         });
 
         if (picturecard.clicked) {
@@ -87,7 +87,7 @@ class Game extends React.Component {
         return array;
     }
     renderPictureCards() {
-        if (this.state.pictureCards == null || this.state.pictureCards.length == 0) {
+        if (this.state.pictureCards === null || this.state.pictureCards.length === 0) {
             this.mapTeams();
         }
         return this.shuffle(this.state.pictureCards).map((item) => item.pictureCard);
