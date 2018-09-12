@@ -14,9 +14,13 @@
   color: white;
 }
 
-.App-title {
+.App-title, .currentScore {
   font-size: 1.5em;
 }
+
+.currentScore{
+  margin-right: 10px;
+};
 
 .App-intro {
   font-size: large;
